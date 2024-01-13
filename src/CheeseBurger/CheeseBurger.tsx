@@ -21,7 +21,7 @@ const CheeseBurger: React.FC<ItemProps> = ({onClick}) => {
 
   return (
     <div style={elemStyle} onClick={onClick}>
-      <img src={cheeseBurgerImg} alt='cheesehamburger' style={{width: 85}}/>
+      <img src={cheeseBurgerImg} alt="cheesehamburger" style={{width: 85}}/>
       <div style={disStyle}>
         <h3 style={{marginTop: 0}}>Cheeseburger</h3>
         <span>Price: 90 KGS</span>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import './App.css';
 import Hamburger from './Hamburger/Hamburger.tsx';
 import CheeseBurger from './CheeseBurger/CheeseBurger.tsx';
@@ -34,37 +34,20 @@ function App() {
     setDishesCount([...dishesCountCopy]);
   };
 
-  const minusCount = (index: number) => {
-    // if (ingredientCount[index].count !== 0) {
-    //   const ingredientCountCopy = [...ingredientCount];
-    //   ingredientCountCopy[index].count--;
-    //   setIngredientCount([...ingredientCountCopy]);
-    // }
-    if (dishesCount[index].count !== 0) {
-      setDishesCount(prevState => {
-        prevState[index].count--;
-        return [...prevState];
-      });
-    }
-  };
-
   return (
-    <div className='main'>
+    <div className="main">
       <div className="order">
         <h2 className="title">Order Details: </h2>
         <Order dishesCount={dishesCount} dishesPrice={dishesPrice} />
-
-        {/*Order is empty!<br/>*/}
-        {/*Please add some items!*/}
       </div>
       <div className="menu">
-        <h2 className='title'>Add items: </h2>
-        <Hamburger onClick={() => plusCount(0)}/>
-        <CheeseBurger onClick={() => plusCount(1)}/>
-        <Coffee onClick={() => plusCount(2)}/>
-        <Cola onClick={() => plusCount(3)}/>
-        <Fries onClick={() => plusCount(4)}/>
-        <Tea onClick={() => plusCount(5)}/>
+        <h2 className="title">Add items: </h2>
+        <Hamburger onClick={() => plusCount(0)} key={Math.random()} />
+        <CheeseBurger onClick={() => plusCount(1)} key={Math.random()} />
+        <Coffee onClick={() => plusCount(2)} key={Math.random()} />
+        <Cola onClick={() => plusCount(3)} key={Math.random()} />
+        <Fries onClick={() => plusCount(4)} key={Math.random()} />
+        <Tea onClick={() => plusCount(5)} key={Math.random()} />
       </div>
     </div>
   );
