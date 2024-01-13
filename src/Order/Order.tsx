@@ -35,7 +35,7 @@ const Order: React.FC<Props> = ({dishesPrice, dishesCount}) => {
               <span>x{dish.count}</span>
             </div>
             <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '20%'}}>
-              <span>{dishesPrice[index].price}</span>
+              <span>{dishesPrice[index].price} KGS</span>
               <button
                 onClick={() => minusCount(index)}
                 style={{padding: 10, background: 'red', cursor: 'pointer', border: 'none', borderRadius: 5}}
