@@ -1,7 +1,7 @@
 import React from 'react';
 import burgerImg from '../assets/hamburger.png';
 import {ItemProps} from '../type';
-import '../App.css'
+import '../App.css';
 
 const Hamburger: React.FC<ItemProps> = ({onClick}) => {
   return (

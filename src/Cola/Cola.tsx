@@ -1,7 +1,7 @@
 import React from 'react';
 import colaImg from '../assets/cola.png';
 import {ItemProps} from '../type';
-import '../App.css'
+import '../App.css';
 
 const Cola: React.FC<ItemProps> = ({onClick}) => {
 

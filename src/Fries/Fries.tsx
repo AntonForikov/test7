@@ -1,7 +1,7 @@
 import React from 'react';
 import friesImg from '../assets/fries.png';
 import {ItemProps} from '../type';
-import '../App.css'
+import '../App.css';
 
 const Fries: React.FC<ItemProps> = ({onClick}) => {
 

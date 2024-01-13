@@ -1,7 +1,7 @@
 import React from 'react';
 import teaImg from '../assets/tea.png';
 import {ItemProps} from '../type';
-import '../App.css'
+import '../App.css';
 
 const Tea: React.FC<ItemProps> = ({onClick}) => {
   return (

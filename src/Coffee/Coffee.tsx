@@ -1,7 +1,7 @@
 import React from 'react';
 import coffeeImg from '../assets/coffee.png';
 import {ItemProps} from '../type';
-import '../App.css'
+import '../App.css';
 const Coffee: React.FC<ItemProps> = ({onClick}) => {
 
   return (
