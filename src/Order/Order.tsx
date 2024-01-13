@@ -30,13 +30,16 @@ const Order: React.FC<Props> = ({dishesPrice, dishesCount}) => {
       if (dish.count > 0) {
         return (
           <div style={{display: 'flex', justifyContent: 'space-between', margin: '20px 0'}} key={Math.random()}>
-            <div style={{display: 'flex', justifyContent: 'space-between', width: '30%'}}>
+            <div style={{display: 'flex', justifyContent: 'space-between', width: '20%', alignItems: 'center'}}>
               <span>{dish.name}</span>
               <span>x{dish.count}</span>
             </div>
-            <div style={{display: 'flex', justifyContent: 'space-between', width: '30%'}}>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '20%'}}>
               <span>{dishesPrice[index].price}</span>
-              <button onClick={() => minusCount(index)}>Delete</button>
+              <button
+                onClick={() => minusCount(index)}
+                style={{padding: 10, background: 'red', cursor: 'pointer', border: 'none', borderRadius: 5}}
+              >Delete</button>
             </div>
           </div>
         );
@@ -52,10 +55,14 @@ const Order: React.FC<Props> = ({dishesPrice, dishesCount}) => {
       </>
     );
   } else {
-    return <>
-      Order is empty!<br/>
-      Please add some items!
-    </>;
+    return (
+      <>
+        <h3>
+          Order is empty!<br/>
+          Please add some items!
+        </h3>
+      </>
+    )
   }
 };
 
