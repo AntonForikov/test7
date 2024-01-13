@@ -1,22 +1,22 @@
 .main {
   margin: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .menu {
-  flex-basis: 60%;
+  flex-basis: 70%;
   padding: 15px;
   border: 4px solid black;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 35px;
   justify-content: space-between;
   position: relative;
 }
 
 .order {
-  flex-basis: 34%;
+  flex-basis: 25%;
   border: 4px solid black;
   padding: 15px;
   position: relative;

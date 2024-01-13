@@ -4,7 +4,7 @@ import {ItemProps} from '../type';
 
 const Hamburger: React.FC<ItemProps> = ({onClick}) => {
   const elemStyle: React.CSSProperties = {
-    width: '48%',
+    width: '46%',
     display: 'flex',
     cursor: 'pointer',
     border: '1px solid black',

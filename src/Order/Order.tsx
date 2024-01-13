@@ -29,12 +29,12 @@ const Order: React.FC<Props> = ({dishesPrice, dishesCount}) => {
     {order.map((dish, index) => {
       if (dish.count > 0) {
         return (
-          <div style={{display: 'flex', justifyContent: 'space-between', margin: '20px 0'}} key={Math.random()}>
-            <div style={{display: 'flex', justifyContent: 'space-between', width: '20%', alignItems: 'center'}}>
+          <div style={{display: 'flex', justifyContent: 'space-between', margin: '15px 0'}} key={Math.random()}>
+            <div style={{display: 'flex', justifyContent: 'space-between', width: '28%', alignItems: 'center'}}>
               <span>{dish.name}</span>
               <span>x{dish.count}</span>
             </div>
-            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '20%'}}>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '28%'}}>
               <span>{dishesPrice[index].price} KGS</span>
               <button
                 onClick={() => minusCount(index)}
@@ -51,7 +51,7 @@ const Order: React.FC<Props> = ({dishesPrice, dishesCount}) => {
     return (
       <>
         {result}
-        <h3 style={{textAlign: 'center'}}>Total price: {amount}</h3>
+        <h3 style={{textAlign: 'center', margin: '0'}}>Total price: {amount}</h3>
       </>
     );
   } else {
